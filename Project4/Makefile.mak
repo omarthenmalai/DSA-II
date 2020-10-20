@@ -1,0 +1,8 @@
+run: a.exe
+	./a.exe
+
+a.exe: merge.cpp
+	g++ -std=c++11 -o a.exe merge.cpp
+
+clean:
+	rm -f *.exe *.o *.stackdump *~
